@@ -15,7 +15,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .logo{
-    background: #000000;
+    background: #fab574;
     width: 100%;  /*ширина*/
     display: flex;  /*определим что logo это flex контейнер*/
     justify-content: center;  /*выравнивание элементов горизонтально*/
@@ -43,14 +43,17 @@ nav{
     font-size: 20px;
 }
 .topnav a:hover{  /*hover эффект*/
-    border-bottom: 3px solid #000000;  /**/
+    border-bottom: 3px solid #fab574;  /*solid сплошная рамка*/
+    /*background: #fab574;*/
 }
 .topnav .icon{
     display: none;
 }
 
 .mw-100{
-    max-width: 100%; /* отображение не будет выходить за пределы родиетльского контейнера,  для адаптивности  */
+    margin-top: -40px;
+    width: 100%;
+    /*max-width: 100%; !* отображение не будет выходить за пределы родиетльского контейнера,  для адаптивности  *!*/
 }
 .advantages_container{ /**/
     display: flex;  /*определим флэкс-контейнером  flex-box*/
@@ -68,6 +71,68 @@ nav{
     width: 30%; /*ширина блока 30%*/
 }
 
+footer{
+    width: 100%;
+    height: auto;
+    background: #fab574;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+footer a{
+    color: #fafafa;
+    font-size: 14px;
+    margin-left: 10px;
+}
+footer p{
+    color: #fafafa;
+}
+footer nav a:hover{
+    border-bottom: 1px solid #fafafa;
+}
+footer .graficlogo{
+    margin-top: -70px;
+}
+
+.social img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.social img:hover{
+    background: #494949;
+    border-radius: 90%;
+}
+
+.contact_container{ /**/
+    margin-top: 40px;
+    display: flex;  /*определим флэкс-контейнером  flex-box*/
+    /*justify-content: space-between;*/
+    justify-content: center;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+}
+/*.contact{*/
+    /*width: 35%;*/
+    /*!*width: 500px;*!*/
+    /*height: 400px;*/
+    /*padding-top: 40px;*/
+    /*!*width: 70%; !*ширина блока*!*!*/
+    /*!*display: flex; !*определяем flex элементом*!*!*/
+    /*!*justify-content: space-between; *!*/
+    /*!*text-align: left;  !* текст по центру*!*!*/
+    /*!*flex-wrap: wrgraficlogoap;*!*/
+/*}*/
+#map{
+    width: 70%;
+    /*width: 500px;*/
+    height: 400px;
+    padding-top: 40px;
+    /*width: 70%; !*ширина блока*!*/
+    /*display: flex; !*определяем flex элементом*!*/
+    /*justify-content: space-between; !*пространство между элементами*!*/
+    /*text-align: center;  !* текст по центру*!*/
+    flex-wrap: wrap;
+}
 
 @media screen and (max-width: 768px) {  /*медиа запросы для разных размеров экранов. Все что записано ниже определено для экранов меньше 768px*/
     .topnav a:not(:first-child){ /*выбираем все ссылки кроме первого элемента*/
