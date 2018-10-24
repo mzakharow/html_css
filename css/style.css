@@ -15,7 +15,8 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .logo{
-    background: #fab574;
+    /*background: #fab574;*/
+    background: #000;
     width: 100%;  /*ширина*/
     display: flex;  /*определим что logo это flex контейнер*/
     justify-content: center;  /*выравнивание элементов горизонтально*/
@@ -55,6 +56,10 @@ nav{
     width: 100%;
     /*max-width: 100%; !* отображение не будет выходить за пределы родиетльского контейнера,  для адаптивности  *!*/
 }
+.mw-100 img{
+    max-width: 100%; /*отображение не будет выходить за пределы родиетльского контейнера,  для адаптивности  *!*/
+}
+
 .advantages_container{ /**/
     display: flex;  /*определим флэкс-контейнером  flex-box*/
     justify-content: center; /*выравнивание элементов вдоль горизонтальной оси*/
@@ -71,11 +76,126 @@ nav{
     width: 30%; /*ширина блока 30%*/
 }
 
+.form{
+    width: 50%;
+    margin: 50px auto;
+}
+.feedback-input{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    background-color:#fff;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    border-bottom: 1px solid #000000;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+.button-submit{
+    float: left;
+    width: 100%;
+    border: 0px transparent;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: all 0.3s;
+    margin-top: -10px;
+    font-wight: 300;
+}
+.button-submit:hover{
+    background-color:#ffffff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.ease{
+    width: 0;
+    height: 74px;
+    background-color: #fafafa;
+    transition: .3s ease;
+}
+
+
+label {
+    /*-webkit-perspective: 1000px;*/
+    /*perspective: 1000px;*/
+    /*-webkit-transform-style: preserve-3d;*/
+    /*transform-style: preserve-3d;*/
+    /*display: block;*/
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+.card div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+    line-height: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
+    opacity: .5;
+}
+.card .back {
+    background: #222;
+    color: #FFF;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: .8;
+}
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+
 footer{
     width: 100%;
     height: auto;
-    background: #fab574;
+    background: #000;
     margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
     padding-top: 25px;
 }
