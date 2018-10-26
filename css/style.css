@@ -60,6 +60,21 @@ nav{
     max-width: 100%; /*отображение не будет выходить за пределы родиетльского контейнера,  для адаптивности  *!*/
 }
 
+
+.services{
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+}
+.services p{
+    margin-top: 30px;
+}
+
+.services .leftimg{
+    width: 300px;
+    float:left;
+}
+
 .advantages_container{ /**/
     display: flex;  /*определим флэкс-контейнером  flex-box*/
     justify-content: center; /*выравнивание элементов вдоль горизонтальной оси*/
@@ -94,12 +109,14 @@ nav{
     box-sizing: border-box;
     border: 0px solid transparent;
     border-bottom: 1px solid #000000;
+    font-family: 'Raleway', sans-serif;
 }
 
 textarea {
     width: 100%;
     height: 150px;
     resize: vertical;
+    font-family: 'Raleway', sans-serif;
 }
 
 .button-submit{
